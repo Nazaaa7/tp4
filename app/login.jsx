@@ -47,7 +47,11 @@ export default function LoginScreen() {
           <TouchableOpacity style={styles.button} onPress={handleFaceLogin}>
             <Text style={styles.buttonText}>Iniciar sesión con cámara</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={[styles.button, { marginTop: 10 }]} onPress={() => router.push("/registerFace")}>
+  <Text style={styles.buttonText}>Registrar rostro</Text>
+</TouchableOpacity>
         </>
+        
       ) : (
         <View style={{ flex: 1, width: '100%' }}>
           {Platform.OS !== 'web' ? (

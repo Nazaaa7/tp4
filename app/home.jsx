@@ -4,8 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      {/* Texto correctamente envuelto en un componente <Text> */}
-      <Text style={styles.text}>✅ ¡Bienvenido, login exitoso con reconocimiento facial simulado!</Text>
+      <Text style={styles.text}>Login exitoso</Text>
     </View>
   );
 }
